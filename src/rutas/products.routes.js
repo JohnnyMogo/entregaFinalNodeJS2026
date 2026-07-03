@@ -12,9 +12,9 @@ import { authentication } from "../middleware/authentication.js";
 
 router.get("/products", getAllProducts);
 
-router.get("/product/:id", getProductById);
+router.get("/products/:id", getProductById);
 
-router.post("/products", authentication, createProduct);
+router.post("/products/create", authentication, createProduct);
 
 router.put("/products/:id", authentication, updateProduct);
 
